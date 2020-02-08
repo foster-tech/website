@@ -34,6 +34,14 @@
         &:hover {
           color: $primary;
         }
+      }  
+    }
+    .nav-lang{
+      padding: 0.6em;
+      a {
+        img {
+          width: 32px;
+        }
       }
     }
   }

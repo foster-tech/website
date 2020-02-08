@@ -18,9 +18,9 @@
         transition: all ease 0.5s;
         opacity: 0;
         background: fade-out($primary, .1);
-        &:hover {
-          opacity: 1;
-        }
+        // &:hover {
+        //   opacity: 1;
+        // }
         .portfolio-hover-content {
           font-size: 20px;
           position: absolute;
