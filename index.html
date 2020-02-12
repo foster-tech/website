@@ -49,6 +49,20 @@
 
 <body id="page-top">
 
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5e4411eaa89cda5a188590ae/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
+
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
@@ -122,8 +136,9 @@
           es: "Plataforma web responsiva con manejador de contenido" ,
         },
         "Contact Us": { es: "Escríbenos" },
-        "Send Message": { es: "Enviar" },
         "How can we help you?": { es: "¿Cómo podemos ayudar?" },
+        "Send Message": { es: "Enviar" },
+        "Thanks": { es: "Gracias" },
         "Privacy Policy": { es: "Política de Privacidad" },
         "Terms of Use": { es: "Terminos y Condiciones" },
         
@@ -484,6 +499,54 @@
     </div>
   </section> -->
 
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+  
+      // get the form elements defined in your form HTML above
+      
+      var form = document.getElementById("my-form");
+      var button = document.getElementById("my-form-button");
+      var status = document.getElementById("my-form-status");
+  
+      // Success and Error functions for after the form is submitted
+      
+      function success() {
+        form.reset();
+        button.style = "display: none ";
+        status.innerHTML = '<div class="alert alert-danger trn">¡Gracias por tu mensaje. Pronto entraremos en contacto!</div>';
+      }
+  
+      function error() {
+        status.innerHTML = "Oops! There was a problem.";
+      }
+  
+      // handle the form submission event
+  
+      form.addEventListener("submit", function(ev) {
+        ev.preventDefault();
+        var data = new FormData(form);
+        ajax(form.method, form.action, data, success, error);
+      });
+    });
+    
+    // helper function for sending an AJAX request
+  
+    function ajax(method, url, data, success, error) {
+      var xhr = new XMLHttpRequest();
+      xhr.open(method, url);
+      xhr.setRequestHeader("Accept", "application/json");
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState !== XMLHttpRequest.DONE) return;
+        if (xhr.status === 200) {
+          success(xhr.response, xhr.responseType);
+        } else {
+          error(xhr.status, xhr.response, xhr.responseType);
+        }
+      };
+      xhr.send(data);
+    }
+  </script>
+
   <!-- Contact -->
   <section class="page-section" id="contact">
     <div class="container">
@@ -495,7 +558,36 @@
       </div>
       <div class="row">
         <div class="col-lg-12">
-          <form id="contactForm" name="sentMessage" novalidate="novalidate">
+          <form id="my-form"
+            action="https://formspree.io/xeqgvyab"
+            method="POST"
+          >
+            <div class="row">
+              
+              <div class="col-lg-12">
+                <div class="form-group"> 
+                  <input class="form-control" type="email" name="email" data-translate="email_placeHolder" required="required"/>
+                  <p class="help-block text-danger"></p>
+                </div>
+                <div class="form-group">  
+                  <textarea class="form-control" name="message" data-translate="message_placeHolder" required="required"></textarea>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="clearfix"></div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button id="my-form-button" class="btn btn-primary btn-xl text-uppercase trn">Send Message</button>
+                <!-- <div class="alert alert-danger"> -->
+                  <div id="my-form-status"></div>
+                <!-- </div> -->
+                </div>
+              </div>
+            </div>
+          </form>
+          
+
+          <!-- <form id="contactForm" name="sentMessage" novalidate="novalidate"></form>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
@@ -523,7 +615,7 @@
                 <button id="sendMessageButton" class="btn btn-primary btn-xl text-uppercase trn" type="submit">Send Message</button>
               </div>
             </div>
-          </form>
+          </form> -->
         </div>
       </div>
     </div>
