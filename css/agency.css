@@ -188,7 +188,8 @@ header.masthead {
   background-image: url("../img/header-bg-triangules.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
 }
 
 header.masthead .intro-text {
