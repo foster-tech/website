@@ -188,7 +188,7 @@ header.masthead {
   background-image: url("../img/header-bg-triangules.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-size: cover;
+  background-size: contain;
 }
 
 header.masthead .intro-text {
@@ -250,6 +250,10 @@ header.masthead .intro-text .intro-img {
   margin: 0 0 15px;
 }
 
+#portfolio img {
+  border-radius: 10px 10px 0 0;
+}
+
 #portfolio .portfolio-item .portfolio-link {
   position: relative;
   display: block;
@@ -293,6 +297,7 @@ header.masthead .intro-text .intro-img {
   padding: 25px;
   text-align: center;
   background-color: #fff;
+  border-radius: 0 0 10px 10px;
 }
 
 #portfolio .portfolio-item .portfolio-caption h4 {
