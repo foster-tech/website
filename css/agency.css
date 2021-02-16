@@ -705,3 +705,71 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 .mg-top {
   margin-top: 30px;
 }
+
+/* Video Area */
+.video-area img {
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+@media only screen and (max-width: 991px) {
+  .video-area img {
+    max-width: 100%;
+  }
+}
+
+.video-area .vdo-btn {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 991px) {
+  .video-area .vdo-btn {
+    bottom: 50px;
+  }
+}
+
+.video-area.style--two {
+  z-index: 3;
+  overflow: hidden;
+}
+
+.video-area.style--two > img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.video-area.style--two .vdo-btn-two {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: auto;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+@media only screen and (max-width: 379px) {
+  .video-area.style--two .vdo-btn-two {
+    -webkit-transform: translate(-50%, -50%) scale(0.6);
+    -ms-transform: translate(-50%, -50%) scale(0.6);
+    transform: translate(-50%, -50%) scale(0.6);
+  }
+}
+
+.video-area.style--two .vdo-btn-two:hover svg {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.video-area.style--two.bg-overlay:after {
+  z-index: 1;
+}
