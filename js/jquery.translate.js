@@ -17,13 +17,13 @@
 	
     var settings = {
       css: "trn",
-      lang: "en"/*,
+      lang: "en",
       t: {
-        "translate": {
-          pt: "tradução",
-          br: "tradução"
-        }
-      }*/
+        "Welcome to": { 
+          es: "Bienvenido a",
+          pt: "Bem-vindo a",
+         },
+      }
     };
     settings = $.extend(settings, options || {});
     if (settings.css.lastIndexOf(".", 0) !== 0)   //doesn't start with '.'
