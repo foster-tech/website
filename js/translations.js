@@ -27,13 +27,13 @@ $(function() {
             "Clients": { 
               es: "Clientes",
               pt: "Clientes" },
-            "Branding": { 
-              es: "Creación de marca",
-              pt: "Criação de marca" },
+            "Automation": { 
+              es: "Automatización",
+              pt: "Automatização" },
             service_1 : { 
-              en: "We create a unique identity for your brand and/or product. From the logo to posts on the networks.",
-              es: "Creamos una identidad única para su marca y/o producto. Desde el logo hasta sus posts en las redes.", 
-              pt: "Criamos uma identidade única para a sua marca e/ou produto. Do logótipo às suas publicações nas redes.",
+              en: "We automate and digitize existing processes in your company.",
+              es: "Automatizamos y digitalizamos los procesos existentes en su empresa.", 
+              pt: "Automatizamos e digitalizamos processos existentes na sua empresa.",
             },
             "Development": { 
               es: "Desarrollo", 
@@ -54,14 +54,14 @@ $(function() {
               pt: "Agilidade é o nosso segredo para entregar produtos no prazo e com qualidade." ,
             },
             portfolio_1 : { 
-              en: "App & Web platform to monitor with real-time GPS" ,
-              es: "App y plataforma web para monitoreo GPS en tiempo real" ,
-              pt: "App e plataforma web para monitoramento GPS em tempo real" ,
-            },
-            portfolio_2 : { 
               en: "Resposive web platform to the biggest event of Creative Economy" ,
               es: "Plataforma web responsiva para el más grande evento de Economía Creativa" ,
               pt: "Plataforma web responsiva para o maior evento de Economia Criativa",
+            },
+            portfolio_2 : { 
+              en: "Web System to project evaluations and grade calculation" ,
+              es: "Sistema web para evaluación de proyectos y calculo de notas" ,
+              pt: "Sistema web para avaliação de projectos e cálculo de notas" ,
             },
             portfolio_3 : { 
               en: "Mobile Application for Project Management" ,

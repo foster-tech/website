@@ -253,6 +253,8 @@ header.masthead .intro-text .intro-img {
 
 #portfolio img {
   border-radius: 10px 10px 0 0;
+  width: 100%;
+  height: inherit;
 }
 
 #portfolio .portfolio-item .portfolio-link {
