@@ -109,7 +109,8 @@ $(function() {
              },
             
           };
-          var _t = $('body').translate({lang: "es", t: t});
+          // Set default as PT
+          var _t = $('body').translate({lang: "pt", t: t});
           var str = _t.g("translate");
           console.log(str);
         
@@ -140,8 +141,8 @@ $(function() {
               })
           };
         
-          // Set default as ES
-          set_lang(dictionary.es);
+          // Set default as PT
+          set_lang(dictionary.pt);
     
           $(".lang_selector").click(function(ev) {
             var lang = $(this).attr("data-value");
