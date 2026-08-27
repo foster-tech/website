@@ -557,6 +557,15 @@ ul.social-buttons li a:hover {
 }
 
 @media (max-width: 767.98px) {
+  #mainNav > .container {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  #mainNav .navbar-toggler {
+    right: auto;
+  }
+
   .page-section {
     padding: 82px 0;
   }
