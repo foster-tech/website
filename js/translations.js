@@ -5,6 +5,18 @@ $(function() {
               es: "Bienvenido a",
               pt: "Bem-vindo a",
              },
+            "Technology is the means.": {
+              es: "Tecnología es el medio.",
+              pt: "Tecnologia é o meio.",
+             },
+            "Intelligence is the path.": {
+              es: "Inteligencia es el camino.",
+              pt: "Inteligência é o caminho.",
+             },
+            "Impact is the result.": {
+              es: "Impacto es el resultado.",
+              pt: "Impacto é o resultado.",
+             },
             "Know more": { 
               es: "Conozca más",
               pt: "Saiba mais" },
