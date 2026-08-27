@@ -76,14 +76,14 @@ $(function() {
               pt: "Sistema web para avaliação de projectos e cálculo de notas" ,
             },
             portfolio_3 : { 
-              en: "Mobile Application for Project Management" ,
-              es: "Applicación Móvil para manejo de proyectos" ,
-              pt: "Aplicação móvel para gerenciamento de projetos",
+              en: "Smart delivery and route management in real time.",
+              es: "Gestión inteligente de entregas y rutas en tiempo real.",
+              pt: "Gestão inteligente de entregas e rotas em tempo real.",
             },
             portfolio_4 : { 
-              en: "Marketplace for Projects and Investors" ,
-              es: "Marketplace web responsivo para Proyectos y Inversores" ,
-              pt: "Marketplace Web Responsivo para Projetos e Investidores",
+              en: "Automated student payment collection via WhatsApp.",
+              es: "Automatización de cobros a estudiantes vía WhatsApp.",
+              pt: "Automação de cobranças de alunos via WhatsApp.",
             },
             portfolio_5 : { 
               en: "Web system for Real Estate Agents" ,
