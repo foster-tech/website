@@ -1,6 +1,16 @@
 $(function() {
 
     var t = {
+            services_intro: {
+              en: "We specialize in developing digital products and services, from the first prototype to operating at scale.",
+              es: "Somos especialistas en el desarrollo de productos y servicios digitales, desde el primer prototipo hasta la operación a escala.",
+              pt: "Somos especializados no desenvolvimento de produtos e serviços digitais, do primeiro protótipo à operação em escala.",
+            },
+            "Mobile apps": {
+              en: "Mobile apps",
+              es: "Apps móviles",
+              pt: "Apps mobile",
+            },
             "Welcome to": { 
               es: "Bienvenido a",
               pt: "Bem-vindo a",
@@ -42,28 +52,28 @@ $(function() {
             "Automation": { 
               es: "Automatización",
               pt: "Automatização" },
-            service_1 : { 
-              en: "We automate and digitize existing processes in your company.",
-              es: "Automatizamos y digitalizamos los procesos existentes en su empresa.", 
-              pt: "Automatizamos e digitalizamos processos existentes na sua empresa.",
+            service_1: {
+              en: "We automate and digitize existing processes in your company, eliminating repetitive manual work.",
+              es: "Automatizamos y digitalizamos los procesos existentes en su empresa, eliminando el trabajo manual repetitivo.",
+              pt: "Automatizamos e digitalizamos processos existentes na sua empresa, eliminando trabalho manual repetitivo.",
             },
             "Development": { 
               es: "Desarrollo", 
               pt: "Desenvolvimento", 
             },
-            service_2 : { 
-              en: "We develop your ideas and help you to grow your business, through APPs and websites." ,
-              es: "Desarrollamos sus ideas y le ayudamos a crecer sus negocios, a través de APPs y páginas web." ,
-              pt: "Desenvolvemos as suas ideias e ajudamos a fazer crescer o seu negócio, através de APPs e páginas web." ,
+            service_2: {
+              en: "We develop your ideas and help your business grow through apps and websites built to last.",
+              es: "Desarrollamos sus ideas y ayudamos a hacer crecer su negocio, a través de apps y páginas web construidas para durar.",
+              pt: "Desenvolvemos as suas ideias e ajudamos a fazer crescer o seu negócio, através de apps e páginas web construídas para durar.",
             },
             "Agile methodology": { 
               es: "Metodología Ágil",
               pt: "Metodologia Ágil",
              },
-            service_3 : { 
-              en: "Agilility is our secret to deliver products on time and with quality." ,
-              es: "Agilidad es nuestro secreto para entregar los productos en tiempo y con calidad." ,
-              pt: "Agilidade é o nosso segredo para entregar produtos no prazo e com qualidade." ,
+            service_3: {
+              en: "Agility is our secret to delivering products on time, with short cycles and constant feedback.",
+              es: "La agilidad es nuestro secreto para entregar productos a tiempo, con ciclos cortos y feedback constante.",
+              pt: "Agilidade é o nosso segredo para entregar produtos no prazo, com ciclos curtos e feedback constante.",
             },
             portfolio_1 : { 
               en: "Resposive web platform to the biggest event of Creative Economy" ,

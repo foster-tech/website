@@ -31,6 +31,9 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
   <!-- Custom styles for this template -->
   <link href="css/agency.min.css" rel="stylesheet">
   <link href="css/agency.css" rel="stylesheet">
@@ -162,49 +165,65 @@
     </a>
   </header>
 
-  <!-- Services -->
-  <section class="bg-light page-section" id="services">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase trn">Services</h2>
-          <h3 class="section-subheading text-muted trn">Know what we do</h3>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-          <article class="service-card">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-cogs fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading trn">Automation</h4>
-            <p class="text-muted trn" data-trn-key="service_1"></p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article class="service-card">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading trn">Development</h4>
-            <p class="text-muted trn" data-trn-key="service_2"></p>
-          </article>
-        </div>
-        <div class="col-md-4">
-          <article class="service-card">
-            <span class="fa-stack fa-4x">
-              <i class="fas fa-circle fa-stack-2x text-primary"></i>
-              <i class="fas fa-undo-alt fa-stack-1x fa-inverse"></i>
-            </span>
-            <h4 class="service-heading trn">Agile methodology</h4>
-            <p class="text-muted trn" data-trn-key="service_3"></p>
-          </article>
-        </div>
-      </div>
+  <!-- Services (merged from servicos.html) -->
+<section class="services" id="services">
+  <div class="sec-wrap">
+    <div class="sec-head">
+      <h2 class="trn" data-trn-key="Services">Serviços</h2>
+      <div class="bar"></div>
+      <p class="trn" data-trn-key="services_intro">Somos especializados no desenvolvimento de produtos e serviços digitais, do primeiro protótipo à operação em escala.</p>
     </div>
-  </section>
+
+    <div class="services-grid">
+
+      <!-- Card em destaque (serviço principal) -->
+      <article class="s-card featured">
+        <div>
+          <div class="s-icon">
+            <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="8 4 3 12 8 20"></polyline>
+              <polyline points="16 4 21 12 16 20"></polyline>
+              <line x1="13" y1="3" x2="11" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="trn" data-trn-key="Development">Desenvolvimento</h3>
+          <p class="trn" data-trn-key="service_2">Desenvolvemos as suas ideias e ajudamos a fazer crescer o seu negócio, através de apps e páginas web construídas para durar.</p>
+        </div>
+        <div class="s-tags">
+          <span>Web apps</span>
+          <span class="trn" data-trn-key="Mobile apps">Apps mobile</span>
+          <span>APIs</span>
+        </div>
+      </article>
+
+      <!-- Card secundário 1 -->
+      <article class="s-card plain">
+        <div class="s-icon">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h0a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h0a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v0a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </div>
+        <h3 class="trn" data-trn-key="Automation">Automatização</h3>
+        <p class="trn" data-trn-key="service_1">Automatizamos e digitalizamos processos existentes na sua empresa, eliminando trabalho manual repetitivo.</p>
+      </article>
+
+      <!-- Card secundário 2 -->
+      <article class="s-card plain">
+        <div class="s-icon">
+          <svg aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="23 4 23 10 17 10"></polyline>
+            <polyline points="1 20 1 14 7 14"></polyline>
+            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+          </svg>
+        </div>
+        <h3 class="trn" data-trn-key="Agile methodology">Metodologia Ágil</h3>
+        <p class="trn" data-trn-key="service_3">Agilidade é o nosso segredo para entregar produtos no prazo, com ciclos curtos e feedback constante.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
 
 <!-- About -->
   <!-- <section class="bg-light page-section" id="about">
@@ -287,30 +306,28 @@
     </div>
   </section> -->
 
-<!-- Clients -->
-<section class="py-5" id="clients">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 mt-3 mb-3">
-        <a href="//claro.com.do" target="_blank">
-          <img class="img-fluid d-block mx-auto" src="img/logos/claro.png" alt="" width="200" height="70">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 mt-3 mb-3">
-        <a href="//www.cnd.com.do/" target="_blank">
-          <img class="img-fluid d-block mx-auto" src="img/logos/cnd.png" alt="" width="200" height="70">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 mt-3 mb-3">
-        <a href="//www.worldcreativityday.com" target="_blank">
-          <img class="img-fluid d-block mx-auto" src="img/logos/wcd.jpg" alt="" width="200" height="70">
-        </a>
-      </div>
-      <div class="col-md-3 col-sm-6 mt-3 mb-3">
-        <a href="//www.instagram.com/zwork.do/" target="_blank">
-          <img class="img-fluid d-block mx-auto" src="img/logos/zwork.png" alt="" width="200" height="70">
-        </a>
-      </div>
+<!-- Clients (merged from clientes.html) -->
+<section class="clients" id="clients">
+  <div class="marquee">
+    <!-- Trilha 1 -->
+    <div class="marquee-track">
+      <div class="client-mark"><img src="img/logos/tratadas/claro.png" alt="Claro"></div>
+      <div class="client-mark"><img src="img/logos/tratadas/cnd.png" alt="Cerveceria Nacional Dominicana"></div>
+      <div class="client-mark"><img src="img/logos/tratadas/sid.png" alt="Grupo SID"></div>
+      <div class="client-mark"><img src="img/logos/tratadas/mercasid.png" alt="MercaSID"></div>
+      <div class="client-mark"><img src="img/logos/tratadas/rcreative.png" alt="R Creative Agency"></div>
+      <div class="client-mark"><img src="img/logos/tratadas/wcd.png" alt="World Creativity Day"></div>
+      <div class="client-mark"><img src="img/logos/tratadas/zwork.png" alt="Z|Work"></div>
+    </div>
+    <!-- Trilha 2 (cópia idêntica, obrigatória para o loop infinito) -->
+    <div class="marquee-track" aria-hidden="true">
+      <div class="client-mark"><img src="img/logos/tratadas/claro.png" alt=""></div>
+      <div class="client-mark"><img src="img/logos/tratadas/cnd.png" alt=""></div>
+      <div class="client-mark"><img src="img/logos/tratadas/sid.png" alt=""></div>
+      <div class="client-mark"><img src="img/logos/tratadas/mercasid.png" alt=""></div>
+      <div class="client-mark"><img src="img/logos/tratadas/rcreative.png" alt=""></div>
+      <div class="client-mark"><img src="img/logos/tratadas/wcd.png" alt=""></div>
+      <div class="client-mark"><img src="img/logos/tratadas/zwork.png" alt=""></div>
     </div>
   </div>
 </section>
@@ -320,7 +337,8 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase trn">Portfolio</h2>
+          <h2 class="section-heading trn">Portfolio</h2>
+          <div class="bar" aria-hidden="true"></div>
           <h3 class="section-subheading text-muted trn">Know our work</h3>
         </div>
       </div>
