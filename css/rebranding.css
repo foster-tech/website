@@ -442,35 +442,47 @@ header.masthead .intro-text .intro-img {
   #clients .marquee{
     display:flex;
     width: max-content;
+    will-change: transform;
+    transform: translate3d(0, 0, 0);
     animation: ft-clients-scroll var(--marquee-speed) linear infinite;
   }
-  #clients .marquee:hover, #clients .marquee:focus-within{ animation-play-state: paused; }
+  #clients .marquee:focus-within{ animation-play-state: paused; }
+
+  /* Touch Safari can keep :hover active after a tap; only pause for a mouse. */
+  @media (hover: hover) and (pointer: fine) {
+    #clients .marquee:hover{ animation-play-state: paused; }
+    #clients .client-mark:hover{ opacity: 1; }
+  }
 
   #clients .marquee-track{
     display:flex;
+    flex: 0 0 auto;
+    width: max-content;
+    min-width: 100vw;
     align-items:center;
-    gap: var(--marquee-gap);
-    padding-right: var(--marquee-gap);
   }
 
   #clients .client-mark{
     display:flex;
+    flex: 0 0 auto;
     align-items:center;
     height: var(--logo-height);
+    margin-right: var(--marquee-gap);
     opacity: 0.9;
-    transition: opacity 0.2s ease, transform 0.2s ease;
+    transition: opacity 0.2s ease;
   }
-  #clients .client-mark:hover{ opacity: 1; transform: translateY(-1px); }
   #clients .client-mark img{
-    height: 100%;
+    flex: 0 0 auto;
+    height: var(--logo-height);
     width: auto;
+    max-width: none;
     display:block;
     object-fit: contain;
   }
 
   @keyframes ft-clients-scroll{
-    from{ transform: translateX(0); }
-    to{ transform: translateX(-50%); }
+    from{ transform: translate3d(0, 0, 0); }
+    to{ transform: translate3d(-50%, 0, 0); }
   }
 
 
@@ -482,14 +494,15 @@ header.masthead .intro-text .intro-img {
   #services .s-card.featured { padding: 28px; }
   #services .s-card.featured { gap: 40px; }
   #services .s-card.featured h3 { font-size: clamp(20px, 6vw, 24px); }
-  #clients { --marquee-gap: 48px; --logo-height: 36px; }
+  #clients { --marquee-gap: 48px; --logo-height: 36px; --marquee-speed: 20s; }
   #clients::before,
-  #clients::after { width: 40px; }
+  #clients::after { width: 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  #clients .marquee { width: 100%; animation: none !important; }
-  #clients .marquee-track { width: 100%; flex-wrap: wrap; justify-content: center; padding: 0 24px; }
+  #clients .marquee { width: 100%; animation: none !important; transform: none; will-change: auto; }
+  #clients .marquee-track { width: 100%; min-width: 0; flex-wrap: wrap; justify-content: center; gap: var(--marquee-gap); padding: 0 24px; }
+  #clients .client-mark { margin-right: 0; }
   #clients .marquee-track[aria-hidden="true"] { display: none; }
 }
 
