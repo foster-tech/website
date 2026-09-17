@@ -197,38 +197,15 @@ header.masthead {
   object-fit: cover;
 }
 
-.masthead[data-video-state='blocked'] .hero-video,
-.masthead[data-video-state='error'] .hero-video {
+.hero-video.is-autoplay-pending,
+.hero-video.is-autoplay-blocked {
   visibility: hidden;
-}
-
-.hero-video-toggle {
-  padding: 12px 20px;
-  font-size: 0.8rem;
-  border-radius: 999px;
-}
-
-.hero-video-toggle i {
-  margin-right: 8px;
-}
-
-.hero-video-status {
-  margin: 16px 0 0;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 0.78rem;
-  text-shadow: 0 2px 8px rgba(5, 11, 43, 0.6);
-}
-
-.hero-video-toggle[hidden],
-.hero-video-status[hidden],
-.hero-video-status [hidden] {
-  display: none !important;
 }
 
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgba(5, 11, 43, 0.2) 0%, rgba(8, 18, 63, 0) 47%, rgba(8, 15, 48, 0.2) 100%),
-    linear-gradient(0deg, rgba(5, 11, 43, 0.2), transparent 46%);
+    linear-gradient(90deg, rgba(5, 11, 43, 0.12) 0%, transparent 47%, rgba(8, 15, 48, 0.1) 100%),
+    linear-gradient(0deg, rgba(5, 11, 43, 0.1), transparent 46%);
 }
 
 .hero-glow {
@@ -718,8 +695,18 @@ ul.social-buttons li a:hover {
 
   .hero-overlay {
     background:
-      linear-gradient(90deg, rgba(5, 11, 43, 0.38), rgba(8, 18, 63, 0.16)),
-      linear-gradient(0deg, rgba(5, 11, 43, 0.28), transparent 65%);
+      linear-gradient(90deg, rgba(5, 11, 43, 0.08), transparent),
+      linear-gradient(0deg, rgba(5, 11, 43, 0.05), transparent 65%);
+  }
+
+  header.masthead {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.18), rgba(255, 255, 255, 0.18)),
+      url('../img/Rebranding/hero-poster.jpg');
+  }
+
+  .hero-video {
+    filter: brightness(1.38) saturate(1.08);
   }
 
   .hero-tagline {

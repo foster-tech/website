@@ -136,7 +136,7 @@
 
   <!-- Header -->
   <header class="masthead">
-    <video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="img/Rebranding/hero-poster.jpg" aria-hidden="true">
+    <video class="hero-video is-autoplay-pending" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="img/Rebranding/hero-poster.jpg" aria-hidden="true">
       <source src="img/Rebranding/background-fullscreen-web.mp4" type="video/mp4">
     </video>
     <div class="hero-overlay" aria-hidden="true"></div>
@@ -151,21 +151,12 @@
         </h1>
         <div class="hero-actions">
           <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger trn" href="#services">Know more</a>
-          <button class="btn btn-outline-light hero-video-toggle" type="button" hidden>
-            <i class="fas fa-play" aria-hidden="true"></i>
-            <span class="trn">Play background video</span>
-          </button>
         <!-- Calendly link widget begin -->
         <!-- <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
         <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
         <a class="btn btn-primary btn-xl text-uppercase mg-top trn" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/fostertech/15min'});return false;">Schedule a meeting with us</a> -->
         <!-- Calendly link widget end -->
         </div>
-        <p class="hero-video-status" role="status" hidden>
-          <span class="trn" data-video-state="loading">Loading background video...</span>
-          <span class="trn" data-video-state="blocked" hidden>Tap Play to start the background video.</span>
-          <span class="trn" data-video-state="error" hidden>Video unavailable. Showing a still background.</span>
-        </p>
         <!-- static button end -->
       </div>
     </div>

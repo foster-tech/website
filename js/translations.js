@@ -1,22 +1,6 @@
 $(function() {
 
     var t = {
-            "Play background video": {
-              es: "Reproducir vídeo",
-              pt: "Reproduzir vídeo",
-            },
-            "Loading background video...": {
-              es: "Cargando vídeo de fondo...",
-              pt: "Carregando vídeo de fundo...",
-            },
-            "Tap Play to start the background video.": {
-              es: "Toque Reproducir para iniciar el vídeo de fondo.",
-              pt: "Toque em Reproduzir para iniciar o vídeo de fundo.",
-            },
-            "Video unavailable. Showing a still background.": {
-              es: "Vídeo no disponible. Mostrando un fondo estático.",
-              pt: "Vídeo indisponível. Exibindo um fundo estático.",
-            },
             services_intro: {
               en: "We specialize in developing digital products and services, from the first prototype to operating at scale.",
               es: "Somos especialistas en el desarrollo de productos y servicios digitales, desde el primer prototipo hasta la operación a escala.",
